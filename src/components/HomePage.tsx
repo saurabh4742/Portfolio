@@ -6,7 +6,7 @@ const HomePage = () => {
     console.log("hi");
   };
   return (
-    <div className="flex-col md:flex justify-between  md:px-40 md:pt-5 pb-2 gap-3  w-full">
+    <div className=" flex justify-between  px-40 pt-5 pb-2 gap-3  w-full">
       <div className="flex-col justify-between  md:px-10 md:pt-2 md:pb-2 w-full md:w-5/12 ">
         <img
           alt="WEB Dev."
@@ -16,7 +16,7 @@ const HomePage = () => {
         <p className="text-[3vw]">My Name is Saurabh Anand Dev.</p>
       </div>
       <div className="flex items-center justify-center md:px-10 md:pt-2 md:pb-2  w-full md:w-5/12">
-        <div className="flex-col justify-center w-full ">
+        <div className="flex-col justify-center ">
           <p className="text-xl">
             Btech 2nd Year Student,Working on My Skills Still Learning,Open For Oppurtunities.
           </p>
