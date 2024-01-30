@@ -37,7 +37,7 @@ const Navbar = () => {
       </div>
       {/*mobile*/}
       <div
-  className={`flex-col sm:hidden text-center text-[#FFF7ED] pt-3 pl-5 mr-[-0.5vw] pb-4 rounded-b-[25%] bg-primary transition-transform ${
+  className={`flex-col sm:hidden text-center text-lg text-[#FFF7ED] pt-3 pl-5 mr-[-0.5vw] pb-6 rounded-bl-[25%] bg-primary transition-transform ${
     !mobileNav ? "opacity-0 transform -translate-y-full hidden " : "opacity-100 transform translate-y-0"
   }`}
 >
