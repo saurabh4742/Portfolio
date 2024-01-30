@@ -10,7 +10,7 @@ const Navbar = () => {
   };
   return (
     <div className="flex-col ">
-      <div className="flex justify-between px-5 sm:px-10 sm:pt-2 sm:pb-2 w-full">
+      <div className="flex justify-between px-5 sm:px-10 pt-2 sm:pb-2 w-full">
         <div className="text-2xl">Saurabh</div>
         {/*desktop*/}
         <div className="hidden sm:flex justify-between items-center gap-4">
