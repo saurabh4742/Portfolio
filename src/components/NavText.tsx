@@ -4,7 +4,7 @@ interface NavTextProps {
   }
 const NavText: React.FC<NavTextProps>  = ({text}) => {
   return (
-    <div className="transition-all text duration-300 hover:border-b-2 hover:border-primary cursor-pointer">{text}</div>
+    <div className="transition-all text  duration-300 hover:border-b-2 hover:border-primary cursor-pointer">{text}</div>
   )
 }
 

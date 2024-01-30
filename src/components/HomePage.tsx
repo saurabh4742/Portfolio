@@ -6,7 +6,7 @@ const HomePage = () => {
     console.log("hi");
   };
   return (
-    <div className="sm:rounded-tl-[500px] rounded-tl-[180px]  bg-[#FFF7ED]  sm:flex justify-between  sm:px-20 px-4 pt-5 pb-2 gap-3  w-full   ">
+    <div className="sm:rounded-tl-[500px] rounded-tl-[180px]  bg-primarybackground  sm:flex justify-between  sm:px-20 px-4 pt-5 pb-2 gap-3  w-full   ">
       <div className="flex-col  justify-between  sm:px-10  w-full sm:w-5/12 ">
         <WebDeveloper/>
       </div>
