@@ -1,17 +1,35 @@
 import React from 'react';
-import Lottie from 'lottie-react';
+import { Player } from '@lottiefiles/react-lottie-player';
 import animationData from "../Lottie/WebDevloper3.json";
-
+import { useState, useRef, useEffect } from 'react';
 const WebDeveloper: React.FC = () => {
+    const [isPlaying, setIsPlaying] = useState<boolean>(true);
+    const playerRef = useRef<Player>(null);
 
+    const toggleAnimation = () => {
+        setIsPlaying(prevState => !prevState);
+    };
+
+    useEffect(() => {
+        if (isPlaying) {
+            playerRef.current?.play();
+        }
+        else{
+            playerRef.current?.pause();
+        }
+
+    }, [isPlaying]);
 
     return (
-        <div >
-            <Lottie
-                animationData={animationData}
-                loop={true}
-                autoplay={true}
-            />
+        <div onClick={()=>{
+            toggleAnimation();
+        }} >
+            <Player 
+  src={animationData}
+  loop
+  autoplay
+  ref={playerRef}
+/>
         </div>
     );
 };
