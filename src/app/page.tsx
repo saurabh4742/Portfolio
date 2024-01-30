@@ -1,10 +1,10 @@
 "use client"
 import HomePage from "@/components/HomePage";
 import Navbar from "@/components/Navbar";
-import  Profile  from "@/components/Profile";
+import Profile from "@/components/Profile";
 export default function Home() {
   return (
-    <div className="font-serif overflow-hidden">
+    <div>
     <Navbar/>
     <HomePage/>
     <Profile/>
