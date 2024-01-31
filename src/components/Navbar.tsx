@@ -37,19 +37,21 @@ const Navbar = () => {
       </div>
       {/*mobile*/}
       <div
-  className={`flex-col sm:hidden text-center text-lg text-[#FFF7ED] pt-3 pl-5 mr-[-0.5vw] pb-6 rounded-bl-[25%] bg-primary transition-transform ${
-    !mobileNav ? "opacity-0 transform -translate-y-full hidden " : "opacity-100 transform translate-y-0"
-  }`}
->
-        <Link href="/">
-          <NavText text="Home" />
-        </Link>
-        <Link href="#profile">
-          <NavText text="Profile" />
-        </Link>
-        <NavText text="Projects" />
-        <NavText text="Tech-Stack" />
-        <NavText text="Contact me" />
+        className={`flex sm:hidden text-center justify-center item-center text-lg text-[#FFF7ED] pt-3 pl-5 mr-[-0.5vw] pb-6 rounded-bl-[25%] bg-primary transition-max-height ${
+          !mobileNav ? "max-h-0 opacity-0 hidden " : " max-h-screen opacity-100"
+        }`}
+      >
+        <div className="flex-col item-center justify-center">
+          <Link href="/">
+            <NavText text="Home" />
+          </Link>
+          <Link href="#profile">
+            <NavText text="Profile" />
+          </Link>
+          <NavText text="Projects" />
+          <NavText text="Tech-Stack" />
+          <NavText text="Contact me" />
+        </div>
       </div>
     </div>
   );
