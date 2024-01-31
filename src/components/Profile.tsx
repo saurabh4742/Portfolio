@@ -11,7 +11,7 @@ const Profile = () => {
         <p className="my-6 flex justify-center gap-4"><UserRound /> Saurabh Anand</p>
         <p className="my-6 flex justify-center gap-4"><School2 /> NIET,Greater Noida</p>
         <p className="my-6 flex justify-center gap-4"><Home /> Giridih,Jharkhand</p>
-        <p className="my-6 flex justify-center gap-4"><PhoneCall />7004735512</p>
+        <p className="my-6 flex justify-center gap-4"><PhoneCall />+91 7004735512</p>
         <p className="my-6 flex justify-center gap-4"><Mail /> saurabhbebi@gmail.com</p>
         
       </div>
