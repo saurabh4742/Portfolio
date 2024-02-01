@@ -8,7 +8,7 @@ const Footer = () => {
         <a className=" cursor-pointer " href="https://github.com/saurabh4742" target="_blank">
           <Github />
         </a>
-        <a className=" cursor-pointer " href="www.linkedin.com/in/saurabh-anand-77337a252" target="_blank">
+        <a className=" cursor-pointer " href="https://www.linkedin.com/in/saurabh-anand-77337a252" target="_blank">
           <Linkedin />
         </a>
       </div>
