@@ -1,6 +1,6 @@
 import React from 'react';
 import { Player } from '@lottiefiles/react-lottie-player';
-import animationData from "../Lottie/Projects.json";
+import animationData from "../Lottie/Projects2.json";
 import { useState, useRef, useEffect } from 'react';
 const ProjectsAnimation: React.FC = () => {
     const [isPlaying, setIsPlaying] = useState<boolean>(true);
