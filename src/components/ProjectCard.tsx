@@ -9,11 +9,11 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps>  = ({gitSrc,bgSrc,prjTitle,liveUrl}) => {
   return (
     <div className="flex-col mt-4 ">
-      <div className="flex-col items-center justify-center w-fit mt-4 shadow-md rounded-t-3xl rounded-b-3xl bg-[#FAFAFA] pb-2">
+      <div className="flex-col items-center p-2 justify-center w-fit mt-4 shadow-md rounded-t-3xl rounded-b-3xl bg-[#FAFAFA] pb-2">
         <img
           width={300}
           height={300}
-          className="rounded-t-3xl shadow-md  "
+          className="rounded-t-3xl shadow-sm  rounded-b-3xl "
           src={bgSrc}
           alt="google"
         />

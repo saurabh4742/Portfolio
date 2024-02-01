@@ -1,5 +1,6 @@
 "use client"
 import Accomplishments from "@/components/Accomplishments";
+import Footer from "@/components/Footer";
 import HomePage from "@/components/HomePage";
 import Navbar from "@/components/Navbar";
 import Profile from "@/components/Profile";
@@ -14,6 +15,7 @@ export default function Home() {
     <Projects/>
     <TechStack/>
     <Accomplishments/>
+    <Footer/>
     </div>
   );
 }
