@@ -1,9 +1,10 @@
 "use client"
-import Achievements from "@/components/Achievements";
+import Accomplishments from "@/components/Accomplishments";
 import HomePage from "@/components/HomePage";
 import Navbar from "@/components/Navbar";
 import Profile from "@/components/Profile";
 import Projects from "@/components/Projects";
+import TechStack from "@/components/TechStack";
 export default function Home() {
   return (
     <div>
@@ -11,7 +12,8 @@ export default function Home() {
     <HomePage/>
     <Profile/>
     <Projects/>
-    <Achievements/>
+    <TechStack/>
+    <Accomplishments/>
     </div>
   );
 }

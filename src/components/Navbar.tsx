@@ -23,7 +23,12 @@ const Navbar = () => {
           <Link href="#projects">
             <NavText text="Projects" />
           </Link>
-          <NavText text="Tech-Stack" />
+          <Link href="#techstack">
+            <NavText text="Tech-Stack" />
+          </Link>
+          <Link href="#accomplishment">
+            <NavText text="Accomplishments" />
+          </Link>
           <NavText text="Contact me" />
         </div>
         <div className="hidden md:flex items-center">
@@ -53,8 +58,12 @@ const Navbar = () => {
           <Link href="#projects">
             <NavText text="Projects" />
           </Link>
-
-          <NavText text="Tech-Stack" />
+          <Link href="#techstack">
+            <NavText text="Tech-Stack" />
+          </Link>
+          <Link href="#accomplishment">
+            <NavText text="Accomplishments" />
+          </Link>
           <NavText text="Contact me" />
         </div>
       </div>

@@ -5,9 +5,10 @@ import ProjectsAnimation from "@/Lottie-Component/ProjectsAnimation";
 const Projects = () => {
   return (
     <div id="projects" className="flex-col bg-primarybackground rounded-b-3xl justify-center items-center p-4">
-<p className="text-center text-3xl">Projects</p>
+      <p className="flex justify-center text-center text-3xl text-black">
+      Projects
+      </p>
       <ProjectsAnimation/>
-      
       <ul className="text-center text-xl mt-4">
         <li>Click on Live to see Project</li>
         <li>Click on Github icon for Repository</li>
@@ -31,9 +32,6 @@ const Projects = () => {
           prjTitle="Personal Portfolio"
           liveUrl="https://saurabh-anand.vercel.app/"
         />
-      </div>
-      <div className="flex justify-center text-center text-3xl">
-        Explore the projects on GitHub
       </div>
     </div>
   );

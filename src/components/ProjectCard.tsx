@@ -32,7 +32,7 @@ const ProjectCard: React.FC<ProjectCardProps>  = ({gitSrc,bgSrc,prjTitle,liveUrl
           </a>
         </div>
       </div>
-      <p className="text-xl text-center mt-2">{prjTitle}</p>
+      <p className="text-md text-center mt-2">{prjTitle}</p>
     </div>
   );
 };
