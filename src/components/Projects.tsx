@@ -1,11 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import ProjectCard from "./ProjectCard";
-
+import ProjectsAnimation from "@/Lottie-Component/ProjectsAnimation";
 const Projects = () => {
   return (
     <div id="projects" className="flex-col bg-primarybackground rounded-b-3xl justify-center items-center p-4">
-      <p className="text-center text-3xl"></p>
+<p className="text-center text-3xl">Projects</p>
+      <ProjectsAnimation/>
+      
       <ul className="text-center text-xl mt-4">
         <li>Click on Live to see Project</li>
         <li>Click on Github icon for Repository</li>
