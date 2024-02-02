@@ -21,7 +21,6 @@ const Profile = () => {
             className="rounded-[50%] cursor-pointer hover:opacity-90 border-4  shadow-xl"
           />
         </div>
-
         <p className="my-6 flex justify-center gap-4">
           <UserRound /> Saurabh Anand
         </p>

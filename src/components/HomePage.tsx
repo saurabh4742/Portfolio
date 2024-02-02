@@ -10,7 +10,7 @@ const HomePage = () => {
 
     setTimeout(() => {
       setShowComponent(false);
-    }, 4000);
+    }, 3000);
   };
   return (
 

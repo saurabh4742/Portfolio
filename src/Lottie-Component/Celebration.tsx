@@ -4,7 +4,7 @@ const Celebration: React.FC = () => {
     return (
         <div className=" z-50"
         >
-          <Player src={animationData}  autoplay style={{height:250,width:250}}  />
+          <Player src={animationData}  autoplay style={{height:550,width:550}}  />
         </div>
     );
 };

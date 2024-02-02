@@ -5,6 +5,12 @@
   "hints": {
     "button-type": "off",
     "disown-opener": "off",
-    "axe/name-role-value": "off"
+    "axe/name-role-value": "off",
+    "axe/forms": [
+      "default",
+      {
+        "label": "off"
+      }
+    ]
   }
 }
