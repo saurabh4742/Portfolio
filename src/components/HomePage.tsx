@@ -1,12 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "./Button";
 import WebDeveloper from "../Lottie-Component/WebDevloper";
+import Celebration from "@/Lottie-Component/Celebration";
 const HomePage = () => {
+  const [showComponent, setShowComponent] = useState(false);
+
   const handleParty = () => {
-    console.log("hi");
+    setShowComponent(true);
+
+    setTimeout(() => {
+      setShowComponent(false);
+    }, 4000);
   };
   return (
+
+    <>
+    <div className="fixed top-0 left-0 w-screen h-fit flex justify-center ">{showComponent && <Celebration/>}</div>
+    
     <div className="sm:rounded-tl-[500px] rounded-tl-[180px]  bg-primarybackground  sm:flex justify-between  sm:px-20 px-4 pt-5 pb-2 gap-3  w-full   ">
+      
       <div className="flex-col  justify-between  sm:px-10  w-full sm:w-5/12 ">
         <WebDeveloper/>
       </div>
@@ -15,9 +27,11 @@ const HomePage = () => {
           <p className="sm:text-xl text-lg sm:text-center">
             Btech 2nd Year Student at NIET,Working on My Skills Still Learning,Open For Oppurtunities.
           </p>
-          <Button handle={handleParty} text="Click Here For Firework" />
+          <Button handle={handleParty}  text="Click Here For Firework" />
         </div>
     </div>
+    </>
+    
   );
 };
 
