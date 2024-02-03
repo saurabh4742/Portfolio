@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import AdminButton from "./AdminButton";
 import NavText from "./NavText";
 import { AlignJustify } from "lucide-react";
 import Link from "next/link";
@@ -17,22 +16,22 @@ const Navbar = () => {
           <Link href="/">
             <NavText text="Home" />
           </Link>
-          <Link href="#profile">
+          <Link href="/profile">
             <NavText text="Profile" />
           </Link>
-          <Link href="#projects">
+          <Link href="/project">
             <NavText text="Projects" />
           </Link>
-          <Link href="#techstack">
+          <Link href="/techstack">
             <NavText text="Tech-Stack" />
           </Link>
-          <Link href="#accomplishment">
+          <Link href="/accomplishment">
             <NavText text="Accomplishments" />
           </Link>
           <NavText text="Contact me" />
         </div>
         <div className="hidden md:flex items-center">
-          <AdminButton handle={handleMessage} />
+          
         </div>
         <div className="sm:hidden">
           <AlignJustify
@@ -49,19 +48,19 @@ const Navbar = () => {
         }`}
       >
         <div className="flex-col item-center justify-center">
-          <Link href="/">
+        <Link href="/">
             <NavText text="Home" />
           </Link>
-          <Link href="#profile">
+          <Link href="/profile">
             <NavText text="Profile" />
           </Link>
-          <Link href="#projects">
+          <Link href="/project">
             <NavText text="Projects" />
           </Link>
-          <Link href="#techstack">
+          <Link href="/techstack">
             <NavText text="Tech-Stack" />
           </Link>
-          <Link href="#accomplishment">
+          <Link href="/accomplishment">
             <NavText text="Accomplishments" />
           </Link>
           <NavText text="Contact me" />
