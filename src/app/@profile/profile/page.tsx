@@ -1,7 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 "use client"
+import { delay } from "@/libs/utils";
 import React from "react";
-const ProfileUpdate = () => {
+// eslint-disable-next-line @next/next/no-async-client-component
+const ProfileUpdate =async () => {
+  await delay(1000)
   return (
     <div
       id="profile"
