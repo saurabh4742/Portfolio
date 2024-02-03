@@ -1,3 +1,4 @@
+"use client"
 import AccomplishmentAnimation from '@/Lottie-Component/Accomplishment'
 import React from 'react'
 

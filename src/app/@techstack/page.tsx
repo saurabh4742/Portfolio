@@ -1,5 +1,6 @@
+"use client"
 import React from "react";
-import TechCard from "./TechCard";
+import TechCard from "@/components/TechCard";
 
 const TechStack = () => {
   return (

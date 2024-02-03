@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
+"use client"
 import React from "react";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "@/components/ProjectCard";
 import ProjectsAnimation from "@/Lottie-Component/ProjectsAnimation";
 const Projects = () => {
   return (

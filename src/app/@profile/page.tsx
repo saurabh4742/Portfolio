@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+"use client"
 import ProfileAnimation from "@/Lottie-Component/Profile";
 import { Home, Mail, PhoneCall, School2, UserRound } from "lucide-react";
 import React from "react";
