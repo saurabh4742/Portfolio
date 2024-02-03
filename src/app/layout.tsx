@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ReactNode } from "react";
 const inter = Inter({ subsets: ["latin"] });
-
+import { MyContextProvider } from "@/ContextProvider/MyContext";
 export const metadata: Metadata = {
   title: "Portfolio",
   description: "Licenced by Saurabh Anand ",
@@ -22,12 +22,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className + "font-serif "}>
+        <MyContextProvider>
         {children}
         {profile}
         {project}
         {techstack}
         {accomplishment}
         {footer}
+        </MyContextProvider>
+        
       </body>
     </html>
   );

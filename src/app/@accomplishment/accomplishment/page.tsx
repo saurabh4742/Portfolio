@@ -1,10 +1,20 @@
 "use client"
+import { useMyContext } from '@/ContextProvider/MyContext';
+import AdminLogin from '@/components/AdminLogin'
 import React from 'react'
 
 const AccomplishmentsUpdate = () => {
+  const { userAdmin } = useMyContext();
   return (
-    <div id="accomplishment" className="flex-col bg-primarybackground sm:flex justify-between items-center px-10 sm:px-20 sm:py-3">
-      Update Accomplishments
+    <div  className="flex justify-center py-8 bg-primarybackground">
+      {userAdmin ? (
+        <>You are Loged in Saurabh!</>
+      ) :(
+      <div className="flex-col text-center  ">
+        <p className='text-xl my-2 underline'>Accomplishment Portal</p> 
+        <AdminLogin />
+        </div>
+      )}
     </div>
   )
 }
