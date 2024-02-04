@@ -19,7 +19,7 @@ const Navbar = () => {
           <Link href="#profile">
             <NavText text="Profile" />
           </Link>
-          <Link href="#project">
+          <Link href="#projects">
             <NavText text="Projects" />
           </Link>
           <Link href="#techstack">
@@ -54,7 +54,7 @@ const Navbar = () => {
           <Link href="#profile">
             <NavText text="Profile" />
           </Link>
-          <Link href="#project">
+          <Link href="#projects">
             <NavText text="Projects" />
           </Link>
           <Link href="#techstack">
