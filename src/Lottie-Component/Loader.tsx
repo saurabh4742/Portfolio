@@ -1,6 +1,6 @@
 import { Player } from "@lottiefiles/react-lottie-player";
 import animationData from "../Lottie/Cat-Loader.json";
-const Loader: React.FC = async() => {
+const Loader: React.FC = () => {
     return (
         <div className=" z-50"
         >

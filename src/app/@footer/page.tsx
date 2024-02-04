@@ -1,5 +1,7 @@
 "use client";
+import NavText from "@/components/NavText";
 import { Github, Linkedin } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
@@ -20,6 +22,23 @@ const Footer = () => {
         >
           <Linkedin />
         </a>
+      </div>
+      <div className="flex-col">
+        <span className="text-bold text-lg">Admin Access</span>
+      <div className="flex flex-wrap justify-center text-sm items-center gap-2">
+          <Link href="/profile">
+            <NavText text="Profile" />
+          </Link>
+          <Link href="/project">
+            <NavText text="Projects" />
+          </Link>
+          <Link href="/techstack">
+            <NavText text="Tech-Stack" />
+          </Link>
+          <Link href="/accomplishment">
+            <NavText text="Accomplishments" />
+          </Link>
+        </div>
       </div>
       <p>&copy;2024 Saurabh Anand. All rights reserved.</p>
     </div>

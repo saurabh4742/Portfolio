@@ -16,16 +16,16 @@ const Navbar = () => {
           <Link href="/">
             <NavText text="Home" />
           </Link>
-          <Link href="/profile">
+          <Link href="#profile">
             <NavText text="Profile" />
           </Link>
-          <Link href="/project">
+          <Link href="#project">
             <NavText text="Projects" />
           </Link>
-          <Link href="/techstack">
+          <Link href="#techstack">
             <NavText text="Tech-Stack" />
           </Link>
-          <Link href="/accomplishment">
+          <Link href="#accomplishment">
             <NavText text="Accomplishments" />
           </Link>
           <NavText text="Contact me" />
@@ -51,16 +51,16 @@ const Navbar = () => {
         <Link href="/">
             <NavText text="Home" />
           </Link>
-          <Link href="/profile">
+          <Link href="#profile">
             <NavText text="Profile" />
           </Link>
-          <Link href="/project">
+          <Link href="#project">
             <NavText text="Projects" />
           </Link>
-          <Link href="/techstack">
+          <Link href="#techstack">
             <NavText text="Tech-Stack" />
           </Link>
-          <Link href="/accomplishment">
+          <Link href="#accomplishment">
             <NavText text="Accomplishments" />
           </Link>
           <NavText text="Contact me" />

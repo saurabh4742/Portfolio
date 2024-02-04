@@ -1,14 +1,14 @@
-"use client";
 import Accomplishment from "@/Interfaces/Accomplishment";
-import AccomplishmentAnimation from "@/Lottie-Component/Accomplishment";
+import Loading from "@/app/loading";
 import axios from "axios";
+import { Trash2 } from "lucide-react";
 import React, { useEffect, useState } from "react";
-import Loading from "../loading";
 
-const Accomplishments = () => {
-  const [allaccomplishments, setAllAccomplishments] = useState<Accomplishment | null>(
-    null
-  );
+const Display = () => {
+  const [allaccomplishments, setAllAccomplishments] =
+    useState<Accomplishment | null>(null);
+    const handleDelete=async (accomplishment:string)=>{
+    }
   useEffect(() => {
     const fetchAccomplishments = async () => {
       try {
@@ -27,16 +27,20 @@ const Accomplishments = () => {
     fetchAccomplishments();
   }, []);
   return (
-    <div
-      id="accomplishment"
-      className="flex-col bg-primarybackground rounded-t-3xl pt-4 justify-center items-center p-4"
-    >
-      <p className="text-center text-3xl text-black">Accomplishments</p>
-      <AccomplishmentAnimation />
+    <div>
       {allaccomplishments ? (
-        <ul className=" text-center text-xl mt-2">
+        <ul className="flex justify-center flex-wrap text-sm mt-2">
           {allaccomplishments.accomplishments.map((accomplishment, index) => (
-            <li key={index} className="my-2">&#x2022; {accomplishment}</li>
+            <div key={index} className="flex justify-center ">
+              <li  className="my-2">
+                &#x2022; {index}th
+              </li>
+              <button onClick={()=>{
+                handleDelete(accomplishment)
+              }}>
+                <Trash2  />
+              </button>
+            </div>
           ))}
         </ul>
       ) : (
@@ -46,4 +50,4 @@ const Accomplishments = () => {
   );
 };
 
-export default Accomplishments;
+export default Display;
