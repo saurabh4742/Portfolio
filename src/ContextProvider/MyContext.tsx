@@ -2,9 +2,6 @@
 import React, { createContext, useContext, useState } from 'react';
 import { Toaster } from 'react-hot-toast';
 import Admin from '@/Interfaces/Admin';
-// Admin and Employer interfaces go here
-
-// Create a context
 interface ContextType {
   userAdmin: Admin | null;
   setUserAdmin: React.Dispatch<React.SetStateAction<Admin | null>>;
