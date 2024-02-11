@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project talwindcss with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌟 My Portfolio Website 🌟
 
-## Getting Started
+This is my personal portfolio website, showcasing my skills, projects, and experiences. Built using Next.js 14 and app routes, it offers a dynamic and engaging user experience. Notably, the UI is crafted entirely from scratch without relying on additional libraries.
 
-First, run the development server:
+## Visite Now 
+https://saurabh-anands.vercel.app/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+##  Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Dynamic Content**: Utilizes MongoDB to store and fetch data, ensuring that the portfolio remains up-to-date with my latest projects and information.
+- **TypeScript**: Developed with TypeScript for enhanced type safety and code maintainability.
+- **Responsive Design**: Ensures seamless accessibility across various devices and screen sizes.
+- **App Routes**: Implements app routes for smoother navigation and enhanced user experience.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+##  Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Next.js 14
+- MongoDB
+- TypeScript
 
-## Learn More
+##  Usage
 
-To learn more about Next.js, take a look at the following resources:
+To run the project locally:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone this repository.
+2. Install dependencies using `npm install`.
+3. Set up MongoDB and configure the connection.
+4. Run the development server using `npm run dev`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 📄 License
 
-## Deploy on Vercel
+This project is licensed under the Saurabh Anand @2024.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📬 Contact
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+For any inquiries or feedback, feel free to reach out to me at saurabhbebi@gmail.com.```
