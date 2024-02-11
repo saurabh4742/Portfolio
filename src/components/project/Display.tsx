@@ -2,12 +2,10 @@ import Project from '@/Interfaces/Project';
 import Loading from '@/app/loading';
 import axios from 'axios';
 import { Trash2 } from 'lucide-react';
-import { useRouter } from "next/router";
 import React, { useEffect, useState } from 'react'
 import toast from 'react-hot-toast';
 
 const Display = () => {
-  const router = useRouter();
     const [allProjects, setAllProjects] = useState<Project | null>(null);
     useEffect(() => {
       const fetchTechStack = async () => {
@@ -32,7 +30,6 @@ const Display = () => {
         );
         if(response.status==200){
           toast.success(response.data.message)
-          router.push("/")
         }
       } catch (error) {
         toast.error("Error while deleting Project")

@@ -2,12 +2,10 @@ import Accomplishment from "@/Interfaces/Accomplishment";
 import Loading from "@/app/loading";
 import axios from "axios";
 import { Trash2 } from "lucide-react";
-import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 
 const Display = () => {
-  const router = useRouter();
   const [allaccomplishments, setAllAccomplishments] =
     useState<Accomplishment | null>(null);
   const handleDelete = async (accomplishment: string) => {
@@ -18,7 +16,7 @@ const Display = () => {
       );
       if(response.status==200){
         toast.success(response.data.message)
-        router.push('/');
+
       }
     } catch (error) {
       toast.error("Error while deleting Accomplishments")
