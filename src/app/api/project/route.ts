@@ -79,12 +79,12 @@ export async function DELETE(request:NextRequest) {
             })
         }
         else{
-            return new NextResponse(JSON.stringify("Unauthorzied"),{
+            return new NextResponse(JSON.stringify({message:"Unauthorzied"}),{
                 status:404
             })
         }
     } catch(err){
-        return new NextResponse(JSON.stringify("errow while deleting"),{
+        return new NextResponse(JSON.stringify({error:"errow while deleting"}),{
             status:500
         })
     }
