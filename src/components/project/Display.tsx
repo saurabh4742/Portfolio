@@ -22,7 +22,7 @@ const Display = () => {
         }
       };
       fetchTechStack();
-    }, []);
+    }, [allProjects]);
     async function handleDelete(project: object) {
       try {
         const response = await axios.delete(
