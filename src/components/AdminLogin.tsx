@@ -1,18 +1,27 @@
 import { useMyContext } from "@/ContextProvider/MyContext";
+import axios from "axios";
 import React, { useState } from "react";
 import toast from "react-hot-toast";
 const AdminLogin = () => {
   const [username,setUsername]=useState("");
   const [password,setPassword]=useState("");
   const {setUserAdmin } = useMyContext();
-  function handleLogin(event: any): void {
-    if(username==process.env.USER_NAME && password==process.env.PASS_WORD){
-      toast.success("Welcome Saurabh!")
-      setUserAdmin({exist:true})
+  async function handleLogin () {
+    try {
+      const response=await axios.post("/api",{
+        username,password
+      })
+      if(response.status==200){
+        toast.success(response.data.message)
+        setUserAdmin({exist:true})
+      }
+      else{
+        toast.error(response.data.message)
+      }
+    } catch (error) {
+      toast.error("Something went wrong")
     }
-    else{
-      toast.error("Unauthorised")
-    }
+    
   }
 
   return (
