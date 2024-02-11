@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 import React from "react";
 interface ProjectCardProps {
   gitSrc: string;
@@ -18,12 +19,13 @@ const ProjectCard: React.FC<ProjectCardProps>  = ({gitSrc,bgSrc,prjTitle,liveUrl
           alt="google"
         />
         <div className=" flex items-center justify-center py-2 gap-4  ">
-         <a href={gitSrc} target="_blank"><img
+         <a href={gitSrc} target="_blank"><Image
             className="rounded-[50%]  cursor-pointer active:opacity-50 shadow-2xl"
             height={40}
             width={40}
             src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
             alt="github"
+            priority
           /></a> 
           <a href={liveUrl} target="_blank">
             <span className="text-xl border-b-2 active:border-primary cursor-pointer ">
