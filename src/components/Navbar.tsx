@@ -28,7 +28,6 @@ const Navbar = () => {
           <Link href="#accomplishment">
             <NavText text="Accomplishments" />
           </Link>
-          <NavText text="Contact me" />
         </div>
         <div className="hidden md:flex items-center">
           
@@ -63,7 +62,6 @@ const Navbar = () => {
           <Link href="#accomplishment">
             <NavText text="Accomplishments" />
           </Link>
-          <NavText text="Contact me" />
         </div>
       </div>
     </div>

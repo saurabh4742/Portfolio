@@ -15,7 +15,7 @@ const UpdateForm = () => {
         prjTitle,
         gitSrc,bgSrc}
       setLoading(true);
-      const response = await axios.put(`${process.env.API_DOMAIN}api/project`, {
+      const response = await axios.put(`/api/project`, {
         project
       },{
       });

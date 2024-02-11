@@ -10,7 +10,7 @@ const Display = () => {
     useEffect(() => {
       const fetchTechStack = async () => {
         try {
-          const response = await axios.get(`${process.env.API_DOMAIN}api/project`);
+          const response = await axios.get(`/api/project`);
   
           if (response.status == 200) {
             setAllProjects(response.data.user);
@@ -25,7 +25,7 @@ const Display = () => {
     async function handleDelete(project: object) {
       try {
         const response = await axios.delete(
-          `${process.env.API_DOMAIN}api/project`,
+          `/api/project`,
           { data: { techStackToRemove: project } }
         );
         if(response.status==200){

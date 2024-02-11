@@ -11,7 +11,7 @@ const Projects = () => {
   useEffect(() => {
     const fetchTechStack = async () => {
       try {
-        const response = await axios.get(`${process.env.API_DOMAIN}api/project`);
+        const response = await axios.get(`/api/project`);
 
         if (response.status == 200) {
           setAllProjects(response.data.user);

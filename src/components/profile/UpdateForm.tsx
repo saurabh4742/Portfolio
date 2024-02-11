@@ -12,7 +12,7 @@ const UpdateForm = () => {
   const handleSubmit = async () => {
     try {
       setLoading(true);
-      const response = await axios.put(`${process.env.API_DOMAIN}api/profile`, {
+      const response = await axios.put(`/api/profile`, {
         name,
         college,
         home,

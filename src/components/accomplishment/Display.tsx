@@ -11,7 +11,7 @@ const Display = () => {
   const handleDelete = async (accomplishment: string) => {
     try {
       const response = await axios.delete(
-        `${process.env.API_DOMAIN}api/accomplishment`,
+        `/api/accomplishment`,
         { data: { accomplishmentToRemove: accomplishment } }
       );
       if(response.status==200){
@@ -26,7 +26,7 @@ const Display = () => {
     const fetchAccomplishments = async () => {
       try {
         const response = await axios.get(
-          `${process.env.API_DOMAIN}api/accomplishment`
+          `/api/accomplishment`
         );
 
         if (response.status == 200) {

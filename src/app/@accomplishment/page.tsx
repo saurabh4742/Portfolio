@@ -13,7 +13,7 @@ const Accomplishments = () => {
     const fetchAccomplishments = async () => {
       try {
         const response = await axios.get(
-          `${process.env.API_DOMAIN}api/accomplishment`
+          `/api/accomplishment`
         );
 
         if (response.status == 200) {

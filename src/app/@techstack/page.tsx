@@ -9,7 +9,7 @@ const TechStack = () => {
   useEffect(() => {
     const fetchTechStack = async () => {
       try {
-        const response = await axios.get(`${process.env.API_DOMAIN}api/techstack`);
+        const response = await axios.get(`/api/techstack`);
 
         if (response.status == 200) {
           setAllTechStack(response.data.user);
