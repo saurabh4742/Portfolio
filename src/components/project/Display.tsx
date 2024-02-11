@@ -2,12 +2,12 @@ import Project from '@/Interfaces/Project';
 import Loading from '@/app/loading';
 import axios from 'axios';
 import { Trash2 } from 'lucide-react';
-import { redirect } from 'next/navigation';
-import router from 'next/router';
+import { useRouter } from "next/router";
 import React, { useEffect, useState } from 'react'
 import toast from 'react-hot-toast';
 
 const Display = () => {
+  const router = useRouter();
     const [allProjects, setAllProjects] = useState<Project | null>(null);
     useEffect(() => {
       const fetchTechStack = async () => {

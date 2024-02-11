@@ -5,9 +5,9 @@ import axios from "axios";
 import { Trash2 } from 'lucide-react';
 import Loading from "@/app/loading";
 import toast from "react-hot-toast";
-import { redirect } from "next/navigation";
-import router from "next/router";
+import { useRouter } from "next/router";
 const Display = () => {
+  const router = useRouter();
     const [allTechStack, setAllTechStack] = useState<TechStack | null>(null);
   useEffect(() => {
     const fetchTechStack = async () => {
