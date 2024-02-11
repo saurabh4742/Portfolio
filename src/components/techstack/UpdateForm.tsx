@@ -11,7 +11,7 @@ const UpdateForm = () => {
     try {
       const techstack={bgSrc,officialUrl,alt}
       setLoading(true);
-      const response = await axios.put("https://saurabh-anands.vercel.app/api/techstack", {
+      const response = await axios.put(`${process.env.API_DOMAIN}api/techstack`, {
         techstack
       });
       setLoading(false);

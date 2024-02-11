@@ -6,7 +6,7 @@ const AdminLogin = () => {
   const [password,setPassword]=useState("");
   const {setUserAdmin } = useMyContext();
   function handleLogin(event: any): void {
-    if(username=="dopemind" && password=="admin"){
+    if(username==`${process.env.USERNAME}` && password==`${process.env.PASSWORD}`){
       toast.success("Welcome Saurabh!")
       setUserAdmin({exist:true})
     }

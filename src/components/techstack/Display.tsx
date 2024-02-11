@@ -9,7 +9,7 @@ const Display = () => {
   useEffect(() => {
     const fetchTechStack = async () => {
       try {
-        const response = await axios.get("https://saurabh-anands.vercel.app/api/techstack");
+        const response = await axios.get(`${process.env.API_DOMAIN}api/techstack`);
 
         if (response.status == 200) {
           setAllTechStack(response.data.user);
@@ -24,7 +24,7 @@ const Display = () => {
     async function handleDelete(techstack: object) {
       try {
         const response = await axios.delete(
-          "https://saurabh-anands.vercel.app/api/techstack",
+          `${process.env.API_DOMAIN}api/techstack`,
           { data: { projectToRemove: techstack } }
         );
         if(response.status==200){

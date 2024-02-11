@@ -13,7 +13,7 @@ const Accomplishments = () => {
     const fetchAccomplishments = async () => {
       try {
         const response = await axios.get(
-          "https://saurabh-anands.vercel.app/api/accomplishment"
+          `${process.env.API_DOMAIN}api/accomplishment`
         );
 
         if (response.status == 200) {

@@ -11,7 +11,7 @@ const Profile = () => {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const response = await axios.get("https://saurabh-anands.vercel.app/api/profile");
+        const response = await axios.get(`${process.env.API_DOMAIN}api/profile`);
 
         if (response.status == 200) {
           setProfile(response.data.user);
