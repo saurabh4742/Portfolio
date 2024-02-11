@@ -6,6 +6,7 @@ import { Trash2 } from 'lucide-react';
 import Loading from "@/app/loading";
 import toast from "react-hot-toast";
 import { redirect } from "next/navigation";
+import router from "next/router";
 const Display = () => {
     const [allTechStack, setAllTechStack] = useState<TechStack | null>(null);
   useEffect(() => {
@@ -31,7 +32,7 @@ const Display = () => {
         );
         if(response.status==200){
           toast.success(response.data.message)
-          redirect("/")
+          router.push("/")
         }
       } catch (error) {
         toast.error("Error while deleting Project")
