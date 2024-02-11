@@ -6,7 +6,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Profile from "@/Interfaces/Profile";
 import Loading from "../loading";
-import Image from "next/image";
 const Profile = () => {
   const [profile, setProfile] = useState<Profile | null>(null);
   useEffect(() => {
@@ -37,13 +36,12 @@ const Profile = () => {
           <div className="sm:flex-col justify-center items-center sm:h-full gap-6 text-center text-xl sm:w-5/12">
           {profile ? (<>
             <div className="my-6 flex justify-center gap-4">
-              <Image
+              <img
                 src="https://firebasestorage.googleapis.com/v0/b/image-test-b1876.appspot.com/o/SaurabhAnand111.jpeg?alt=media&token=4a860572-f344-48d4-9b74-511c75489783"
                 alt="logo"
                 width={100}
                 height={100}
                 className="rounded-[50%] cursor-pointer hover:opacity-90 border-4  shadow-xl"
-                priority
               />
             </div>
             <p className="my-6 flex justify-center gap-4">
