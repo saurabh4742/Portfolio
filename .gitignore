@@ -9,3 +9,6 @@
 
 # production
 /build
+#env
+.env*
+serviceAccountKey.json
