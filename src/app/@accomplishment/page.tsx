@@ -4,6 +4,7 @@ import AccomplishmentAnimation from "@/Lottie-Component/Accomplishment";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Loading from "../loading";
+import { motion } from "framer-motion";
 
 const Accomplishments = () => {
   const [allaccomplishments, setAllAccomplishments] = useState<Accomplishment | null>(
@@ -34,11 +35,13 @@ const Accomplishments = () => {
       <p className="text-center text-3xl text-black">Accomplishments</p>
       <AccomplishmentAnimation />
       {allaccomplishments ? (
-        <ul className=" text-center text-xl mt-2">
+        <motion.ul className=" text-center text-xl mt-2" initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}>
           {allaccomplishments.accomplishments.map((accomplishment, index) => (
             <li key={index} className="my-2">&#x2022; {accomplishment}</li>
           ))}
-        </ul>
+        </motion.ul>
       ) : (
         <Loading />
       )}

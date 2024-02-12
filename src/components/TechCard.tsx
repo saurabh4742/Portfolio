@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import { motion } from "framer-motion";
 import React from "react";
 interface TechCardProps {
     alt: string;
@@ -7,7 +8,9 @@ interface TechCardProps {
 }
 const TechCard: React.FC<TechCardProps>  = ({alt,bgSrc,OfficialUrl}) => {
   return (
-    <div className="flex-col mt-4 ">
+    <motion.div className="flex-col mt-4 " initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.5, ease: "easeOut" }}>
       <div className="flex-col items-center justify-center w-fit mt-4 shadow-md rounded-[50%]">
         <a href={OfficialUrl} target="_blank"><img
           width={80}
@@ -18,7 +21,7 @@ const TechCard: React.FC<TechCardProps>  = ({alt,bgSrc,OfficialUrl}) => {
         /></a>
       </div>
       <p className="text-sm text-center mt-2">{alt}</p>
-    </div>
+    </motion.div>
   );
 };
 

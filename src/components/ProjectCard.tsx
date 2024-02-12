@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import { motion } from "framer-motion";
 import React from "react";
 interface ProjectCardProps {
   gitSrc: string;
@@ -8,7 +9,9 @@ interface ProjectCardProps {
 }
 const ProjectCard: React.FC<ProjectCardProps>  = ({gitSrc,bgSrc,prjTitle,liveUrl}) => {
   return (
-    <div className="flex-col mt-4 ">
+    <motion.div className="flex-col mt-2 " initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.5, ease: "easeOut" }}>
       <div className="flex-col items-center p-2 justify-center w-fit mt-4 shadow-md rounded-t-3xl rounded-b-3xl bg-[#FAFAFA] pb-2">
         <img
           width={300}
@@ -33,7 +36,7 @@ const ProjectCard: React.FC<ProjectCardProps>  = ({gitSrc,bgSrc,prjTitle,liveUrl
         </div>
       </div>
       <p className="text-md text-center mt-2">{prjTitle}</p>
-    </div>
+    </motion.div>
   );
 };
 
