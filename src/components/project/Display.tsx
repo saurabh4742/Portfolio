@@ -26,7 +26,7 @@ const Display = () => {
       try {
         const response = await axios.delete(
           `/api/project`,
-          { data: { techStackToRemove: project } }
+          { data: { projectToRemove: project } }
         );
         if(response.status==200){
           toast.success(response.data.message)
