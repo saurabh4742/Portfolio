@@ -44,11 +44,12 @@ const Navbar = () => {
       {/*mobile*/}
       <AnimatePresence>
         {mobileNav && (
-          <motion.div layout="size"
+          <motion.div layout="size" 
             initial={{ opacity: 0, maxHeight: 0 }}
             animate={{borderRadius:[50,30,20,10,5,0], rotate:"0deg",opacity: 1, maxHeight: "100vh" }}
             exit={{borderRadius:[0,5,10,20,30,50], opacity: 0, maxHeight: 0 }}
             transition={{ease:"easeOut", duration: 0.6 }}
+            custom="popLayout"
             className="flex sm:hidden text-center justify-center item-center text-lg text-[#FFF7ED] pt-3 pl-5 mr-[-0.5vw] pb-6  bg-primary overflow-hidden"
           >
             <div className="flex-col item-center justify-center">
