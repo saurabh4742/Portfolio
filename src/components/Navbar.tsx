@@ -44,12 +44,12 @@ const Navbar = () => {
       {/*mobile*/}
       <AnimatePresence>
         {mobileNav && (
-          <motion.div layout
+          <motion.div layout="size"
             initial={{ opacity: 0, maxHeight: 0 }}
-            animate={{ rotate:"0deg",opacity: 1, maxHeight: "100vh" }}
-            exit={{ scale:100, opacity: 0, maxHeight: 0 }}
-            transition={{ duration: 0.6 }}
-            className="flex sm:hidden text-center justify-center item-center text-lg text-[#FFF7ED] pt-3 pl-5 mr-[-0.5vw] pb-6 rounded-bl-[25%] bg-primary overflow-hidden"
+            animate={{borderRadius:[50,30,20,10,5,0], rotate:"0deg",opacity: 1, maxHeight: "100vh" }}
+            exit={{borderRadius:[0,5,10,20,30,50], opacity: 0, maxHeight: 0 }}
+            transition={{ease:"easeOut", duration: 0.6 }}
+            className="flex sm:hidden text-center justify-center item-center text-lg text-[#FFF7ED] pt-3 pl-5 mr-[-0.5vw] pb-6  bg-primary overflow-hidden"
           >
             <div className="flex-col item-center justify-center">
               <Link href="/">
