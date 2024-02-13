@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 
 const TypingAnimation = () => {
   const [text, setText] = useState("");
-  const [isTypingFinished, setIsTypingFinished] = useState(false);
   const fullText = "Full Stack Developer";
 
   useEffect(() => {
@@ -13,7 +12,6 @@ const TypingAnimation = () => {
         setText((prevText) => prevText + nextChar);
       } else {
         clearInterval(intervalId);
-        setIsTypingFinished(true);
       }
     }, 100);
 
@@ -29,15 +27,6 @@ const TypingAnimation = () => {
       >
         {text}
       </motion.p>
-      {isTypingFinished && (
-        <motion.span
-          className="text-3xl "
-          animate={{ x: [-3, 5, -3] }}
-          transition={{ repeat: Infinity, duration: 2 }}
-        >
-          ...
-        </motion.span>
-        )}
     </div>
   );
 };
