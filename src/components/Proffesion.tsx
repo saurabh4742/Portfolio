@@ -30,7 +30,7 @@ const TypingAnimation = () => {
   return (
     <div className="flex items-center">
       <motion.p
-        className="text-3xl sm:text-nowrap min-h-14  bg-black py-2"
+        className="text-3xl sm:text-nowrap min-h-14  py-2"
         animate={{ x: 0 }}
         transition={{ ease: "easeInOut", duration: 1 }}
       >
