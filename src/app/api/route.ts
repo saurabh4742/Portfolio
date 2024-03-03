@@ -12,24 +12,18 @@ export async function POST (request: NextRequest){
     const {username ,password}= await request.json()
     const user=await Admin.findOne({username})
     if(user){
-      if (user.password==password) {
+      if (user.password===password) {
 
         return new NextResponse(JSON.stringify({message:"Welcome Saurabh"}),{
           status:200
         })
-      } else {
-        return new NextResponse(JSON.stringify({message:"Wrong Password"}),{
-          status:401
-        })
-      }
-      
+      }   
     }
     else{
       return new NextResponse(JSON.stringify({message:"Unauthorized"}), {
         status: 404,
       })
     }
-    ;
 } catch (error) {
   return new NextResponse(JSON.stringify({error:"Something went wrong"}), {
     status: 500,
